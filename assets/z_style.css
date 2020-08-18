@@ -1,0 +1,7 @@
+#page-content {
+    min-height: 40em;
+}
+
+#metrics-wrapper > div {
+    background-color: #1abc9c;
+}
