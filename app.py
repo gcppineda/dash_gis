@@ -27,8 +27,8 @@ content = html.Div(
         html.Div(table_div, style = {"background-color":"#3498db"}),
         html.Div([
             html.Div(map_div, style = {"background-color":"#f1c40f"}),
-            html.Div(metrics_div, id = "metrics-wrapper", style = {"display":"inline-grid", "column-gap":"1em", "grid-template-columns":"1fr 1fr 1fr"})
-        ], style = {"display":"grid", "grid-template-rows":"4fr 1fr", "row-gap":"1em"})
+            html.Div(metrics_div, id = "metrics-wrapper", style = {"display":"inline-grid", "column-gap":"1em", "row-gap":"1em","grid-template-columns":"1fr 1fr 1fr"})
+        ], style = {"display":"grid", "grid-template-rows":"4fr 2fr", "row-gap":"1em"})
     ],
     style = {
         "display":"grid",
@@ -43,6 +43,7 @@ map_div.append(html.H3("map box"))
 metrics_div.append(html.Div("Thing 1"))
 metrics_div.append(html.Div("Thing 2"))
 metrics_div.append(html.Div("Thing 3"))
+metrics_div.append(html.Div("Thing 4"))
 
 # MAKE APP AND LAYOUT ------------------------------------------------------------------------------------
 app = dash.Dash(__name__)
